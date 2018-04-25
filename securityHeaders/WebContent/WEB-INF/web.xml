@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<servlet>
+		<servlet-name>1</servlet-name>
+		<jsp-file>/WEB-INF/test/XXSSProtection.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>1</servlet-name>
+		<url-pattern>/test/XXSSProtection</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>2</servlet-name>
+		<jsp-file>/WEB-INF/result/XXSSProtection.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>2</servlet-name>
+		<url-pattern>/result/XXSSProtection</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>3</servlet-name>
+		<jsp-file>/WEB-INF/test/csp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>3</servlet-name>
+		<url-pattern>/test/csp</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>4</servlet-name>
+		<jsp-file>/WEB-INF/result/csp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>4</servlet-name>
+		<url-pattern>/result/csp</url-pattern>
+	</servlet-mapping>
+
+</web-app>
