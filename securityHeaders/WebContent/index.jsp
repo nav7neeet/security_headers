@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>security headers</title>
 </head>
 <body>
 <a href='/securityHeaders/test/XXSSProtection?path=unpatched'>X-XSS-protection Header absent</a><br>
