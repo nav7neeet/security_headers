@@ -11,8 +11,8 @@
 		<servlet-name>1</servlet-name>
 		<url-pattern>/test/XXSSProtection</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
+
+	<servlet>
 		<servlet-name>2</servlet-name>
 		<jsp-file>/WEB-INF/result/XXSSProtection.jsp</jsp-file>
 	</servlet>
@@ -20,7 +20,7 @@
 		<servlet-name>2</servlet-name>
 		<url-pattern>/result/XXSSProtection</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>3</servlet-name>
 		<jsp-file>/WEB-INF/test/csp.jsp</jsp-file>
@@ -29,14 +29,32 @@
 		<servlet-name>3</servlet-name>
 		<url-pattern>/test/csp</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
+
+	<servlet>
 		<servlet-name>4</servlet-name>
 		<jsp-file>/WEB-INF/result/csp.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>4</servlet-name>
 		<url-pattern>/result/csp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>5</servlet-name>
+		<jsp-file>/WEB-INF/test/cors.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>5</servlet-name>
+		<url-pattern>/test/cors</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>6</servlet-name>
+		<jsp-file>/WEB-INF/result/cors.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>6</servlet-name>
+		<url-pattern>/result/cors</url-pattern>
 	</servlet-mapping>
 
 </web-app>
