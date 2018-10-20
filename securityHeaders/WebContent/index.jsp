@@ -14,7 +14,10 @@
 <a href='/securityHeaders/test/csp?path=patched'>CSP present</a><br><br>
 
 <a href='/securityHeaders/test/cors?path=unpatched'>CORS header absent</a><br>
-<a href='/securityHeaders/test/cors?path=patched'>CORS header present</a>
+<a href='/securityHeaders/test/cors?path=patched'>CORS header present</a><br><br>
+
+<a href='/securityHeaders/cache_control.jsp'>Cache control header</a><br>
+
 
 </body>
 </html>
