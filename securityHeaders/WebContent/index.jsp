@@ -18,6 +18,8 @@
 
 <a href='/securityHeaders/cache_control.jsp'>Cache control header</a><br>
 
+<a href='/securityHeaders/referrer_policy.jsp'>referrer control header</a><br>
+
 
 </body>
 </html>
