@@ -5,56 +5,83 @@
 	version="3.0">
 	<servlet>
 		<servlet-name>1</servlet-name>
-		<jsp-file>/WEB-INF/test/XXSSProtection.jsp</jsp-file>
+		<jsp-file>/WEB-INF/test/X-XSS-Protection.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>1</servlet-name>
-		<url-pattern>/test/XXSSProtection</url-pattern>
+		<url-pattern>/test/X-XSS-Protection</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>2</servlet-name>
-		<jsp-file>/WEB-INF/result/XXSSProtection.jsp</jsp-file>
+		<jsp-file>/WEB-INF/result/X-XSS-Protection.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>2</servlet-name>
-		<url-pattern>/result/XXSSProtection</url-pattern>
+		<url-pattern>/result/X-XSS-Protection</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>3</servlet-name>
-		<jsp-file>/WEB-INF/test/csp.jsp</jsp-file>
+		<jsp-file>/WEB-INF/test/Content-Security-Policy.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>3</servlet-name>
-		<url-pattern>/test/csp</url-pattern>
+		<url-pattern>/test/Content-Security-Policy</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>4</servlet-name>
-		<jsp-file>/WEB-INF/result/csp.jsp</jsp-file>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>4</servlet-name>
-		<url-pattern>/result/csp</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
 		<servlet-name>5</servlet-name>
-		<jsp-file>/WEB-INF/test/cors.jsp</jsp-file>
+		<jsp-file>/WEB-INF/test/Access-Control-Allow-Origin.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>5</servlet-name>
-		<url-pattern>/test/cors</url-pattern>
+		<url-pattern>/test/Access-Control-Allow-Origin</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>6</servlet-name>
-		<jsp-file>/WEB-INF/result/cors.jsp</jsp-file>
+		<jsp-file>/WEB-INF/result/Access-Control-Allow-Origin.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>6</servlet-name>
-		<url-pattern>/result/cors</url-pattern>
+		<url-pattern>/result/Access-Control-Allow-Origin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>7</servlet-name>
+		<jsp-file>/WEB-INF/test/Cache-Control.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>7</servlet-name>
+		<url-pattern>/test/Cache-Control</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>8</servlet-name>
+		<jsp-file>/WEB-INF/test/Referrer-Policy.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>8</servlet-name>
+		<url-pattern>/test/Referrer-Policy</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>9</servlet-name>
+		<jsp-file>/WEB-INF/test/Bank.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>9</servlet-name>
+		<url-pattern>/test/Bank</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>10</servlet-name>
+		<jsp-file>/WEB-INF/test/X-Frame-Options.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>10</servlet-name>
+		<url-pattern>/test/X-Frame-Options</url-pattern>
 	</servlet-mapping>
 
 </web-app>

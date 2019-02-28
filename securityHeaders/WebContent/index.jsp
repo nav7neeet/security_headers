@@ -1,24 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>security headers</title>
+<title>security Headers</title>
 </head>
 <body>
-<a href='/securityHeaders/test/XXSSProtection?path=unpatched'>X-XSS-protection Header absent</a><br>
-<a href='/securityHeaders/test/XXSSProtection?path=patched'>X-XSS-protection Header present</a><br><br>
+<a href='/securityHeaders/test/X-XSS-Protection?header=absent'>X-XSS-Protection Header (absent)</a><br>
+<a href='/securityHeaders/test/X-XSS-Protection?header=present'>X-XSS-Protection Header (present)</a><br><br>
 
-<a href='/securityHeaders/test/csp?path=unpatched'>CSP absent</a><br>
-<a href='/securityHeaders/test/csp?path=patched'>CSP present</a><br><br>
+<a href='/securityHeaders/test/Access-Control-Allow-Origin?header=absent'>Access-Control-Allow-Origin Header (absent)</a><br>
+<a href='/securityHeaders/test/Access-Control-Allow-Origin?header=present'>Access-Control-Allow-Origin Header (present)</a><br><br>
 
-<a href='/securityHeaders/test/cors?path=unpatched'>CORS header absent</a><br>
-<a href='/securityHeaders/test/cors?path=patched'>CORS header present</a><br><br>
+<a href='/securityHeaders/test/Cache-Control'>Cache-Control Header</a><br><br>
+<a href='/securityHeaders/test/Referrer-Policy'>Referrer-Policy Header</a><br><br>
 
-<a href='/securityHeaders/cache_control.jsp'>Cache control header</a><br>
-
-<a href='/securityHeaders/referrer_policy.jsp'>referrer control header</a><br>
+<a href='/securityHeaders/test/X-Frame-Options'>X-Frame-Options Header</a><br><br>
+<a href='/securityHeaders/test/Content-Security-Policy'>Content-Security-Policy Header</a><br>
 
 
 </body>

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-7">
-<title>CORS</title>
+<title>Cross-Origin Resource Sharing</title>
 <script >
 	function fun()
 	{
@@ -15,8 +14,9 @@
 		      
 		    	document.getElementById("demo").innerHTML = this.responseText;
 		    }
-		 };
-		httpRequest.open("GET", "http://127.0.0.2:8082/securityHeaders/result/cors?path=${param.path}", true);
+		};
+		
+		httpRequest.open("GET", "http://127.0.0.1:8080/securityHeaders/result/cors?header=${param.header}", true);
 		httpRequest.send();
 	}
 	
