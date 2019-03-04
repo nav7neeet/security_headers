@@ -11,11 +11,12 @@
 <a href='/securityHeaders/test/Access-Control-Allow-Origin?header=present'>Access-Control-Allow-Origin Header (present)</a><br><br>
 
 <a href='/securityHeaders/test/Cache-Control'>Cache-Control Header</a><br><br>
-<a href='/securityHeaders/test/Referrer-Policy'>Referrer-Policy Header</a><br><br>
+<a href='/securityHeaders/test/Referrer-Policy/'>Referrer-Policy Header</a><br><br>
 
 <a href='/securityHeaders/test/X-Frame-Options'>X-Frame-Options Header</a><br><br>
-<a href='/securityHeaders/test/Content-Security-Policy'>Content-Security-Policy Header</a><br>
+<a href='/securityHeaders/test/Content-Security-Policy'>Content-Security-Policy Header</a><br><br>
 
+<a href='/securityHeaders/test/Clear-Site-Data'>Clear-Site-Data Header (not successful)</a><br>
 
 </body>
 </html>

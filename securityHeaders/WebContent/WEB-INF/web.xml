@@ -84,4 +84,22 @@
 		<url-pattern>/test/X-Frame-Options</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>11</servlet-name>
+		<jsp-file>/WEB-INF/test/Clear-Site-Data.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>11</servlet-name>
+		<url-pattern>/test/Clear-Site-Data</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>12</servlet-name>
+		<jsp-file>/WEB-INF/result/Clear-Site-Data.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>12</servlet-name>
+		<url-pattern>/result/Clear-Site-Data</url-pattern>
+	</servlet-mapping>
+
 </web-app>
