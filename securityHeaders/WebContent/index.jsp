@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>security Headers</title>
+<title>Security Headers</title>
 </head>
 <body>
 <a href='/securityHeaders/test/X-XSS-Protection?header=absent'>X-XSS-Protection Header (absent)</a><br>
