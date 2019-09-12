@@ -15,8 +15,9 @@
 		    	document.getElementById("demo").innerHTML = this.responseText;
 		    }
 		};
-		
-		httpRequest.open("GET", "http://127.0.0.1:8080/securityHeaders/result/cors?header=${param.header}", true);
+		httpRequest.withCredentials = true;
+		/* httpRequest.open("GET", "http://127.0.0.1:8081/securityHeaders/result/Access-Control-Allow-Origin?header=${param.header}", true); */
+		httpRequest.open("POST", "http://localhost:8081/securityHeaders/cors?header=${param.header}", true);
 		httpRequest.send();
 	}
 	
@@ -24,7 +25,8 @@
 </head>
 <body>
 	Cross origin resource sharing. click on the button to send AJAX request.
-	<input type="button" value="submit" onclick="fun()"><br>
-	<div id="demo">
+	<input type="button" value="submit" onclick="fun()"><br><br>
+	
+	<div id="demo"></div>
 </body>
 </html>
