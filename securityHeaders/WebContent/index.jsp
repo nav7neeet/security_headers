@@ -16,7 +16,9 @@
 <a href='/securityHeaders/test/X-Frame-Options'>X-Frame-Options Header</a><br><br>
 <a href='/securityHeaders/test/Content-Security-Policy'>Content-Security-Policy Header</a><br><br>
 
-<a href='/securityHeaders/test/Clear-Site-Data'>Clear-Site-Data Header (not successful)</a><br>
+<a href='/securityHeaders/test/sop_cookie'>Test Same Origin Policy (Cookies)</a><br><br>
+
+<a href='/securityHeaders/test/Clear-Site-Data'>Clear-Site-Data Header (not successful)</a><br><br>
 
 </body>
 </html>

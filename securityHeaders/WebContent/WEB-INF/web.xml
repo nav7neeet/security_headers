@@ -88,4 +88,13 @@
     <servlet-name>12</servlet-name>
     <url-pattern>/result/Clear-Site-Data</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>13</servlet-name>
+    <jsp-file>/WEB-INF/test/sop_cookie.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>13</servlet-name>
+    <url-pattern>/test/sop_cookie</url-pattern>
+  </servlet-mapping>
 </web-app>
