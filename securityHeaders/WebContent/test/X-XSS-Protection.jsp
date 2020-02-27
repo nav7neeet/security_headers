@@ -5,7 +5,7 @@
 <body>
 		<h4>Demystify X-XSS-Protection header</h4>
 		
-		<form action="/securityHeaders/result/X-XSS-Protection?header=${param.header }" method="post">
+		<form action="${pageContext.request.contextPath}/result/X-XSS-Protection.jsp?header=${param.header }" method="post">
 				Input - <input type="text" name="name"> 
 						<input type="submit">
 		</form>

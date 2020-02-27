@@ -39,6 +39,7 @@ public class CORS extends HttpServlet {
 
 	protected void doOptions(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
+		setAccessControlHeaders(response);
 		response.getWriter().append("Options method");
 	}
 
@@ -50,6 +51,12 @@ public class CORS extends HttpServlet {
 	private void setAccessControlHeaders(HttpServletResponse response)
 	{
 		response.setHeader("Access-Control-Allow-Origin", "http://localhost:8081"); 
-		response.setHeader("Access-Control-Request-Method", "GET");
+		response.setHeader("Access-Control-Allow-Origin", ""); 
+
+		//		response.setHeader("Access-Control-Allow-Origin", "null"); 
+
+		response.setHeader("Access-Control-Request-Method", "POST");
+		response.setHeader("Access-Control-Allow-Headers", "content-type");
+		response.setHeader("Access-Control-Allow-Credentials", "true");
 	}
 }

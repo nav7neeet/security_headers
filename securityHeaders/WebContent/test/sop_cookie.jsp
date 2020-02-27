@@ -8,6 +8,7 @@
 <body>
 	<% 
 		Cookie cookie= new Cookie("test", "Test_cookie");
+		/* cookie.setDomain("nip.io"); */
 		response.addCookie(cookie);
 	%>
 	
